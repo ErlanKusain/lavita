@@ -1,0 +1,75 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Circe', sans-serif;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url(../fonts/Circe-Regular.woff),
+    url(../fonts/Circe-Regular.woff2);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Circe';
+    src: url(../fonts/Circe-Bold.woff),
+    url(../fonts/Circe-Bold.woff2);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Circe';
+    src: url(../fonts/Circe-ExtraBold.woff),
+    url(../fonts/Circe-ExtraBold.woff2);
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@import 'base/variables';
+@import 'base/mixins';
+
+
+.button-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 165px;
+    height: 60px;
+    background-color: $main-color;
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #333333;
+}
+.subtitle {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.descr {
+    font-size: 16px;
+    font-weight: 400;
+}
