@@ -1,3 +1,49 @@
 .promo {
     margin-top: 20px;
+    padding-top: 140px;
+    padding-bottom: 155px;
+    height: 700px;
+    background: url(../img/bg/bg-main.png) center center / cover no-repeat;
+    &__slider {
+        position: relative;
+        margin-left: 150px;
+        &-descr {
+            display: flex;
+            width: 590px;
+            height: 310px;
+            padding: 15px 30px 15px 30px;
+            justify-content: center;
+            align-items:center;
+            font-size: 40px;
+            font-weight: 800;
+            line-height: 56px;
+            color: #ffffff;
+            background: rgba(51, 51, 51, 0.6);
+        }
+        &-button {
+            margin-top: 50px;
+        }
+    }
+    .slick-prev {
+        position: absolute;
+        top: 120px;
+        left: -150px;
+        display: block;
+        width: 70px;
+        height: 70px;
+        background-color: $main-color;
+        border: none;
+        cursor: pointer;
+    }
+    .slick-next {
+        position: absolute;
+        top: 120px;
+        right: 120px;
+        display: block;
+        width: 70px;
+        height: 70px;
+        background-color: $main-color;
+        border: none;
+        cursor: pointer;
+    }
 }

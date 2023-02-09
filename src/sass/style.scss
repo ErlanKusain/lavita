@@ -42,8 +42,10 @@ body {
 
 @import 'base/variables';
 @import 'base/mixins';
+@import 'base/slick';
 @import 'blocks/header';
 @import 'blocks/promo';
+@import 'blocks/about';
 
 
 .button-more {
@@ -53,6 +55,8 @@ body {
     width: 165px;
     height: 60px;
     background-color: $main-color;
+    color: #fff;
+    cursor: pointer;
     a {
         text-decoration: none;
         color: #fff;

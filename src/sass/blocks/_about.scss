@@ -1,0 +1,33 @@
+.about {
+    height: 750px;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 640px 400px;
+        column-gap: 100px;
+        margin-left: 150px;
+    }
+    &__block {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 638px;
+        height: 400px;
+        padding: 86px 90px 76px 90px;
+        border: 10px solid $main-color;
+        &-title {
+            position: absolute;
+            top: -40px;
+            left: 40px;
+            padding-right: 30px;
+            padding-left: 30px;
+            background-color: #fff;
+        }
+        &-descr {
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+}
