@@ -1,0 +1,117 @@
+.footer {
+    margin-top: 120px;
+    background-color: rgba(0, 0, 0, 0.055);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(5,200px);
+        vertical-align: text-top;
+        column-gap: 69px;
+    }
+    &__inner {
+        &-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #333333;
+        }
+        &-first {
+            display: grid;
+            row-gap: 15px;
+        }
+        &-second { 
+            display: grid;
+            grid-template-rows: repeat(2,143px);
+            row-gap: 40px;
+        }
+        &-block {
+            display: grid;
+            row-gap: 15px;
+        }
+        &-third {
+            display: grid;
+            grid-template-rows:28px 275px;
+            row-gap: 25px;
+        }
+        &-exams {
+            display: grid;
+            grid-template-rows: repeat(4,20px);
+            row-gap: 15px;
+        }
+        &-registration {
+            margin-top: 15px;
+            display: grid;
+            grid-template-rows: repeat(3,40px);
+            row-gap: 15px;
+        }
+        &-fourth {
+            display: grid;
+            grid-template-rows: 28px 160px;
+            row-gap: 25px;
+            &-block {
+                display: grid;
+                row-gap: 15px;
+            }
+        }
+        &-about {
+            margin-top: 9px;
+            display: grid;
+            grid-template-rows: 40px 112px 30px;
+            row-gap: 40px;
+        }
+        &-link {
+            font-size: 14px;
+            font-weight: 400;
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+    &__items {
+        font-size: 14px;
+        font-weight: 400;
+        color: #333333;
+        &-first {
+            position: relative;
+            &::before {
+                content: url(../../img/icons/map.svg);
+                position: absolute;
+                top: 2px;
+                left: -25px;
+            }
+        }
+        &-second {
+            position: relative;
+            &::before {
+                content: url(../../img/icons/call.svg);
+                position: absolute;
+                top: 2px;
+                left: -25px;
+            }
+        }
+        &-third {
+            position: relative;
+            &::before {
+                content: url(../../img/icons/email.svg);
+                position: absolute;
+                top: 2px;
+                left: -25px;
+            }
+        }
+    }
+    &__item {
+        margin-left: 25px;
+        display: grid;
+        row-gap: 20px;
+        cursor: pointer;
+    }
+    &__social {
+        display: grid;
+        grid-template-columns: repeat(4,30px);
+        column-gap: 20px;
+    }
+}
