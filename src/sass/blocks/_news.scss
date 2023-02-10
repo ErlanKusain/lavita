@@ -1,0 +1,17 @@
+.news {
+    &__title {
+        margin-top: 150px;
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(4,306px);
+        column-gap: 24px;
+    }
+    &__inner {
+        display: grid;
+        grid-template-rows: 102px 132px 58px;
+        row-gap: 30px;
+    }
+}
