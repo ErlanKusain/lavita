@@ -1,0 +1,29 @@
+.exams {
+    &__title {
+        margin-top: 150px;
+        text-align: center; 
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4,306px);
+        column-gap: 24px;
+        margin-top: 100px;
+    }
+    &__item {
+        &-title {
+            text-align: center;
+            width: 280px;
+        }
+        &-button {
+            display: block;
+            margin: 0 auto;
+            margin-top: 45px;
+        }
+    }
+    &__lists {
+        padding: 0 30px 0 30px;
+    }
+    &__list {
+        margin-top: 20px;
+    }
+}
