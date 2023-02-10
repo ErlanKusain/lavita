@@ -1,0 +1,18 @@
+.event {
+    &__title {
+        margin-top: 150px;
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 100px;
+
+        display: grid;
+        grid-template-columns: repeat(3,416px);
+        column-gap: 24px;
+    }
+    &__inner {
+        display: grid;
+        grid-template-rows: 250px 68px 88px 58px;
+        row-gap: 30px;
+    }
+}
