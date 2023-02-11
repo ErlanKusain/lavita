@@ -52,8 +52,9 @@ body {
 @import 'blocks/news';
 @import 'blocks/footer';
 
-@import 'blocks/timetable'; // Страница расписание и оплата
-@import 'blocks/exam';    // Страница экзамен
+@import 'blocks/timetable'; // Страница Расписание и оплата
+@import 'blocks/exam';    // Страница Экзамены
+@import 'blocks/contacts'; // Страница Контакты
 
 
 .button-more {
