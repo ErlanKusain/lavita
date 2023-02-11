@@ -1,0 +1,88 @@
+.exam {
+    &__img {
+        margin-top: 40px;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &__title {
+        display: block;
+        width: 1076px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 80px;
+    }
+    &__wrapper {
+        display: block;
+        width: 636px;
+        margin: 0 auto;
+    }
+    &__block-descr {
+        margin-top: 67px;
+    }
+    &__descr {
+        margin-bottom: 20px;
+    }
+    &__levels {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-left: 20px;
+        &-title {
+            margin-bottom: 40px;
+        }
+    }
+    &__level {
+        margin-top: 20px;
+        position: relative;
+        list-style-type: none;
+        &::before { 
+            content:' ';
+            position: absolute;
+            top: 6px;
+            left: -20px;
+            width: 8px;
+            height: 8px;
+            background-color: $main-color;
+        }
+    }
+    &__text-block {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+    &__text {
+        margin-bottom: 20px;
+        position: relative;
+        &::before { 
+            content:'';
+            position: absolute;
+            top: 6px;
+            left: -20px;
+            width: 8px;
+            height: 8px;
+            background-color: $main-color;
+        }
+    }
+    &__lower-descr {
+        margin-bottom: 60px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(6,86px);
+        column-gap: 24px;
+        margin-bottom: 120px;
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 86px;
+        height: 42px;
+        background-color: $main-color;
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
