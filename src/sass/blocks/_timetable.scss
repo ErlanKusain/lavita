@@ -1,0 +1,71 @@
+.timetable {
+    .home {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 50px 150px;
+        column-gap: 40px;
+        &__link {
+            font-size: 14px;
+            font-weight: 400;
+            a {
+                text-decoration: none;
+                color: #333333;
+                &:hover {
+                    color: $main-color;
+                }
+            }
+        }
+        &__timetable {
+            font-size: 14px;
+            font-weight: 400;
+            position: relative;
+            a {
+                text-decoration: none;
+                color: #333333;
+                &:hover {
+                    color: $main-color;
+                }
+            }
+            &::before { 
+                content:' ';
+                position: absolute;
+                top: 6px;
+                left: -20px;
+                width: 8px;
+                height: 8px;
+                background-color: $main-color;
+            }
+        }
+    }
+    &__img {
+        margin-top: 40px;
+        padding-left: 110px;
+    }
+    &__wrapper {
+        padding-left: 110px;
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: 636px 400px;
+        column-gap: 40px;
+    }
+    &__inner {
+        &-bg {
+            margin-top: 120px;
+            display: grid;
+            grid-template-rows: repeat(2,400px);
+            row-gap: 605px;
+        }
+    }
+    &__subtitle {
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+    &__descr {
+        margin-bottom: 20px;
+        &_active {
+            margin: 40px 0 40px 0;
+            border: 5px solid $main-color;
+            padding: 25px 45px 25px 45px;
+        }
+    }
+}

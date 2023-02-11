@@ -70,9 +70,12 @@
             a {
                 text-decoration: none;
                 color: #333333;
+                text-transform: uppercase;
             }
             &-link {
-                margin-right: 20px;
+                &:nth-last-child(n+2) {
+                    margin-right: 15px;
+                }
                 &:hover {
                     color: $main-color;
                 }
