@@ -33,7 +33,6 @@
         text-align: center;
         font-size: 24px;
         font-weight: 700;
-        transform: skewX(-20deg);
         cursor: pointer;
         transition: 0.5s all;
         &_active{
@@ -45,9 +44,10 @@
             color: #fff;
             box-shadow: 4px 4px 20px $main-color;
             border: none;
+            transform: scale(1.085);
         }
         div {
-            transform: skew(20deg);
+            transform: scale(1);
         }
     }
     &__content {
