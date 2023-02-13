@@ -181,7 +181,7 @@
             width: 70%;
             height: 100vh;
             justify-content: center;
-            background-color: $main-color;
+            background-color: rgba(255, 0, 0, 0.900);
             z-index: 2;
             transition: 0.6s all;
             &_active{
@@ -256,23 +256,31 @@
         }
     }
     .promo {
+        margin-top: 0;
+        padding-top: 250px;
         &__slider {
-            margin-left: 110px;
+            margin-left: 60px;
             &-descr {
-                width: 440px;
-                font-size: 25px;
+                width: 380px;
+                height: 250px;
+                font-size: 21px;
+                line-height: 45px;
+            }
+            .button-more {
+                width: 130px;
+                height: 50px;
             }
         }
         .slick-prev {
-            width: 55px;
-            height: 55px;
-            top: 130px;
-            left: -110px;
+            width: 45px;
+            height: 45px;
+            top: 110px;
+            left: -60px;
         }
         .slick-next {
-            width: 55px;
-            height: 55px;
-            top: 130px;
+            width: 45px;
+            height: 45px;
+            top: 110px;
             right: 0;
         }
     }
@@ -285,10 +293,17 @@
     } 
     .header {
         &__logo {
+            display: none;
             width: 180px;
             img {
                 width: 100%;
             }
+        }
+        &__mobile-logo {
+            display: block;
+            position: absolute;
+            top: 20px;
+            left: 20px;
         }
         .menu {
             &__nav {
@@ -301,6 +316,72 @@
                     margin-right: 0;
                 }
             }
+        }
+    }
+    .promo {
+        margin-top: 0;
+        padding-top: 200px;
+        &__slider {
+            margin-left: 45px;
+            &-descr {
+                width: 320px;
+                height: 195px;
+                font-size: 16px;
+                line-height: 29px;
+            }
+            .button-more {
+                width: 110px;
+                height: 40px;
+                font-size: 14px;
+            }
+        }
+        .slick-prev {
+            width: 30px;
+            height: 30px;
+            top: 90px;
+            left: -40px;
+        }
+        .slick-next {
+            width: 30px;
+            height: 30px;
+            top: 90px;
+            right: 5px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .container{
+        width: 100%;
+    } 
+    .promo {
+        margin-top: 0;
+        padding-top: 200px;
+        &__slider {
+            margin-left: 45px;
+            &-descr {
+                width: 230px;
+                height: 195px;
+                font-size: 13px;
+                line-height: 29px;
+            }
+            .button-more {
+                width: 110px;
+                height: 40px;
+                font-size: 14px;
+            }
+        }
+        .slick-prev {
+            width: 30px;
+            height: 30px;
+            top: 90px;
+            left: -40px;
+        }
+        .slick-next {
+            width: 30px;
+            height: 30px;
+            top: 90px;
+            right: 5px;
         }
     }
 }
