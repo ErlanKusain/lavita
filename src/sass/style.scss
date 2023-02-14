@@ -40,6 +40,22 @@ body {
 }
 
 
+.title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #333333;
+}
+.subtitle {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.descr {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
 @import 'base/variables';
 @import 'base/mixins';
 @import 'base/slick';
@@ -76,17 +92,3 @@ body {
     }
 }
 
-.title {
-    font-size: 48px;
-    font-weight: 800;
-    color: #333333;
-}
-.subtitle {
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.descr {
-    font-size: 16px;
-    font-weight: 400;
-}
