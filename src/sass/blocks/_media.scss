@@ -503,7 +503,11 @@
         }
     }
     .exams {
+        &__title {
+            margin-top: 90px;
+        }
         &__items {
+            margin-top: 50px;
             grid-template-columns: repeat(1, 306px);
             column-gap: 20px;
             row-gap: 70px;
@@ -651,6 +655,7 @@
     }
     .event {
         &__wrapper {
+            margin-top: 50px;
             grid-template-columns: repeat(1,360px);
             column-gap: 24px;
             row-gap: 50px;
@@ -668,6 +673,9 @@
                 }
             }
         }
+        &__title {
+            margin-top: 95px;
+        }
     }
     .button-more {
         width: 130px;
@@ -675,12 +683,19 @@
     }
     .news {
         &__wrapper {
-            margin-top: 100px;
+            margin-top: 50px;
             display: grid;
             grid-template-columns: repeat(1,345px);
             column-gap: 20px;
             row-gap: 50px;
             justify-content: center;
+        }
+        &__inner {
+            grid-template-rows: 102px 105px 58px;
+            row-gap: 25px;
+        }
+        &__title {
+            margin-top: 95px;
         }
     }
     .descr {
