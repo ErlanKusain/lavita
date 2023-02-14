@@ -179,6 +179,20 @@
             }
         }
     }
+    // Страница exams 
+    
+    .exam {
+        &__img {
+            width: 960px;
+            margin: 0 auto;
+            img {
+                width: 100%;
+            }
+        }
+        &__title {
+            width: 100%;
+        }
+    }
 }
 
 
@@ -322,9 +336,6 @@
         }
     }
     .timetable {
-        .title {
-            font-size: 43px;
-        }
         &__wrapper {
             display: block;
             padding-left: unset;
@@ -343,7 +354,21 @@
             }
         }
     }
-    
+        .exam {
+        &__img {
+            width: 720px;
+            margin: 0 auto;
+            img {
+                width: 100%;
+            }
+        }
+        &__title {
+            width: 100%;
+        }
+    }
+    .title {
+        font-size: 43px;
+    }
 }
 
 
@@ -628,6 +653,29 @@
         }
 
     }
+    .exam {
+        padding-top: 120px;
+        &__wrapper {
+            width: 100%;
+        }
+        &__items {
+            grid-template-columns: repeat(5,86px);
+            row-gap: 25px;
+        }
+        &__img {
+            width: 520px;
+            margin: 0 auto;
+            img {
+                width: 100%;
+            }
+        }
+        &__title {
+            width: 100%;
+        }
+    }
+    .title {
+        font-size: 38px;
+    }
 }
 
 
@@ -782,6 +830,16 @@
             margin-top: 95px;
         }
     }
+    .exams {
+        &__item {
+            &-button {
+                margin-top: 25px;
+            }
+        }
+        &__items {
+            row-gap: 55px;
+        }
+    }
     .button-more {
         width: 130px;
         height: 40px;
@@ -851,7 +909,38 @@
             left: 35px;
         }
     }
-    
+    .exam {
+        padding-top: 140px;
+        &__title {
+            font-size: 28px;
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-top: 40px;
+        }
+        &__wrapper {
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        &__items {
+            grid-template-columns: repeat(3,86px);
+            row-gap: 25px;
+            justify-content: center;
+        }
+        &__img {
+            width: 360px;
+            margin: 0 auto;
+            img {
+                width: 100%;
+            }
+        }
+        .home {
+            position: absolute;
+            top: 70px;
+            left: 35px;
+        }
+    }
 }
 
 @media (max-width: 321px) {
@@ -981,6 +1070,18 @@
                 padding: 5px;
                 margin-top: 15px;
                 margin-bottom: 15px;
+            }
+        }
+    }
+    .exam {
+        &__title {
+            font-size: 24px;
+        }
+        &__img {
+            width: 310px;
+            margin: 0 auto;
+            img {
+                width: 100%;
             }
         }
     }
