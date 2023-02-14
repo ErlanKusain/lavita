@@ -148,6 +148,15 @@
             justify-content: center;
         }
     }
+    .footer {
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(4,200px);
+            vertical-align: text-top;
+            column-gap: 56px;
+            row-gap: 40px;
+        }
+    }
 }
 
 
@@ -279,6 +288,15 @@
             column-gap: 24px;
             row-gap: 50px;
             justify-content: center;
+        }
+    }
+    .footer {
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(3,200px);
+            vertical-align: text-top;
+            column-gap: 56px;
+            row-gap: 45px;
         }
     }
 }
@@ -518,10 +536,24 @@
         &__wrapper {
             margin-top: 100px;
             display: grid;
-            grid-template-columns: repeat(2,320px);
+            grid-template-columns: repeat(2,265px);
             column-gap: 20px;
             row-gap: 50px;
             justify-content: center;
+        }
+        &__inner {
+            display: grid;
+            grid-template-rows: 102px 132px 58px;
+            row-gap: 70px;
+        }
+    }
+    .footer {
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(2,200px);
+            vertical-align: text-top;
+            column-gap: 56px;
+            row-gap: 45px;
         }
     }
 }
@@ -599,8 +631,9 @@
         }
         &__block {
             width: 340px;
-            height: 340px;
-            padding: 25px 25px 15px 25px;
+            height: 350px;
+            padding: 15px 25px 15px 25px;
+            border: 17px solid #ec1b2e;
             &-title {
                 top: -30px;
                 left: 20px;
@@ -612,7 +645,7 @@
                 font-size: 30px;
             }
             &-descr {
-                font-size: 14px;
+                font-size: 13px;
             } 
         }
     }
@@ -701,6 +734,16 @@
     .descr {
         font-size: 14px;
     }
+    .footer {
+        &__wrapper {
+            display: grid;
+            margin-left: 50px;
+            grid-template-columns: repeat(1,200px);
+            vertical-align: text-top;
+            column-gap: 56px;
+            row-gap: 45px;
+        }
+    }
 }
 
 @media (max-width: 321px) {
@@ -761,7 +804,7 @@
                 font-size: 27px;
             }
             &-descr {
-                font-size: 12px;
+                font-size: 11px;
             } 
         }
     }
