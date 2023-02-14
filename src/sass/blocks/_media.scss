@@ -130,6 +130,14 @@
             justify-content: center;
         }
     }
+    .event {
+        &__wrapper {
+            grid-template-columns: repeat(2,416px);
+            column-gap: 24px;
+            row-gap: 50px;
+            justify-content: center;
+        }
+    }
 }
 
 
@@ -252,6 +260,14 @@
             grid-template-columns: repeat(2, 306px);
             column-gap: 20px;
             row-gap: 40px;
+            justify-content: center;
+        }
+    }
+    .event {
+        &__wrapper {
+            grid-template-columns: repeat(1,416px);
+            column-gap: 24px;
+            row-gap: 50px;
             justify-content: center;
         }
     }
@@ -613,6 +629,30 @@
     .title {
         font-size: 34px;
     }
+    .event {
+        &__wrapper {
+            grid-template-columns: repeat(1,360px);
+            column-gap: 24px;
+            row-gap: 50px;
+            justify-content: center;
+        }
+        &__inner {
+            grid-template-rows: 220px 68px 88px 58px;
+            row-gap: 20px;
+            &-img {
+                width: 360px;
+                display: block;
+                margin: 0 auto;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .button-more {
+        width: 130px;
+        height: 40px;
+    }
 }
 
 @media (max-width: 321px) {
@@ -675,6 +715,34 @@
             &-descr {
                 font-size: 12px;
             } 
+        }
+    }
+    .exams {
+        &__items {
+            grid-template-columns: repeat(1, 306px);
+            column-gap: 20px;
+            row-gap: 70px;
+            justify-content: center;
+        }
+    }
+    .event {
+        &__wrapper {
+            grid-template-columns: repeat(1,310px);
+            column-gap: 24px;
+            row-gap: 50px;
+            justify-content: center;
+        }
+        &__inner {
+            grid-template-rows: 220px 68px 88px 58px;
+            row-gap: 45px;
+            &-img {
+                width: 310px;
+                display: block;
+                margin: 0 auto;
+                img {
+                    width: 100%;
+                }
+            }
         }
     }
 }
