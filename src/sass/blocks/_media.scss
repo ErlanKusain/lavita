@@ -79,6 +79,36 @@
             right: 15px;
         }
     }
+    .about {
+        &__wrapper {
+            margin-left: 150px;
+            display: grid;
+            grid-template-columns: 450px 300px;
+            column-gap: 70px;
+        }
+        &__block {
+            width: 455px;
+            height: 400px;
+            padding: 45px 50px 45px 50px;
+            &-title {
+                top: -35px;
+            }
+            .title {
+                font-size: 38px;
+            }
+            &-descr {
+                font-size: 16px;
+            }
+        }
+        &__bg {
+            width: 300px;
+            height: 300px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
 }
 
 
@@ -141,6 +171,40 @@
             height: 55px;
             top: 130px;
             right: 0;
+        }
+    }
+    .about {
+        height: 650px;
+        padding-top: 120px;
+        padding-bottom: 60px;
+        &__wrapper {
+            margin-left: 110px;
+            display: grid;
+            grid-template-columns: 450px 300px;
+            column-gap: 70px;
+        }
+        &__block {
+            width: 455px;
+            height: 400px;
+            padding: 45px 50px 45px 50px;
+            &-title {
+                top: -35px;
+            }
+            .title {
+                font-size: 38px;
+            }
+            &-descr {
+                font-size: 16px;
+            }
+        }
+        &__bg {
+            display: none;
+            width: 300px;
+            height: 300px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 }
@@ -320,6 +384,21 @@
             right: 0;
         }
     }
+    .about {
+        height: 600px;
+        padding-top: 120px;
+        padding-bottom: 60px;
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 450px;
+            margin-left: 30px;
+        }
+        &__block {
+            width: 455px;
+            height: 400px;
+            padding: 35px 40px 30px 40px;
+        }
+    }
 }
 
 
@@ -382,6 +461,34 @@
             height: 30px;
             top: 90px;
             right: 5px;
+        }
+    }
+    .about {
+        height: 525px;
+        padding-top: 90px;
+        padding-bottom: 50px;    
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 350px;
+            margin-left: 20px;
+        }
+        &__block {
+            width: 350px;
+            height: 340px;
+            padding: 15px 25px 15px 25px;
+            &-title {
+                top: -30px;
+                left: 20px;
+                padding-right: 15px;
+                padding-left: 25px;
+            }
+
+            .title {
+                font-size: 30px;
+            }
+            &-descr {
+                font-size: 14px;
+            } 
         }
     }
 }
