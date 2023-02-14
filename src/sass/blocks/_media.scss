@@ -109,6 +109,19 @@
             }
         }
     }
+    .price {
+        &__tabs {
+            grid-template-columns: repeat(4,230px);
+            column-gap: 10px;
+        }
+        &__tab {
+            width: 225px;
+            font-size: 18px;
+        }
+        table {
+            width: 100%;
+        }
+    }
 }
 
 
@@ -205,6 +218,25 @@
                 width: 100%;
                 height: 100%;
             }
+        }
+    }
+    .price {
+        .title {
+            font-size: 43px;
+        }
+        &__block {
+            margin-left: 100px;
+        }
+        &__tabs {
+            grid-template-columns: repeat(4,160px);
+            column-gap: 25px;
+        }
+        &__tab {
+            width: 160px;
+            font-size: 18px;
+        }
+        table {
+            width: 100%;
         }
     }
 }
@@ -399,6 +431,35 @@
             padding: 35px 40px 30px 40px;
         }
     }
+
+    .price {
+        .title {
+            font-size: 38px;
+        }
+        &__block {
+            grid-template-columns: repeat(2,140px);
+            column-gap: 35px;
+            margin-left: 70px;
+            &-item {
+                width: 140px;
+                height: 50px;
+                font-size: 12px;
+            }
+        }
+        &__tabs {
+            grid-template-columns: repeat(4,100px);
+            -moz-column-gap: 25px;
+            column-gap: 30px;
+            margin-bottom: 40px;
+        }
+        &__tab {
+            width: 115px;
+            font-size: 15px;
+        }
+        table {
+            width: 100%;
+        }
+    }
 }
 
 
@@ -439,9 +500,9 @@
         &__slider {
             margin-left: 45px;
             &-descr {
-                width: 320px;
+                width: 285px;
                 height: 195px;
-                font-size: 16px;
+                font-size: 15px;
                 line-height: 29px;
             }
             .button-more {
@@ -473,9 +534,9 @@
             margin-left: 20px;
         }
         &__block {
-            width: 350px;
+            width: 340px;
             height: 340px;
-            padding: 15px 25px 15px 25px;
+            padding: 25px 25px 15px 25px;
             &-title {
                 top: -30px;
                 left: 20px;
@@ -491,9 +552,43 @@
             } 
         }
     }
+    .price {
+        .title {
+            font-size: 34px;
+        }
+        &__block {
+            grid-template-columns: repeat(2,140px);
+            column-gap: 35px;
+            margin-left: unset;
+            justify-content: center;
+            align-items: center;
+            &-item {
+                width: 140px;
+                height: 50px;
+                font-size: 12px;
+            }
+        }
+        &__tabs {
+            grid-template-columns: repeat(2,115px);
+            column-gap: 70px;
+            margin-bottom: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+        &__tab {
+            width: 115px;
+            font-size: 15px;
+        }
+        table {
+            width: 100%;
+            td {
+                font-size: 14px;
+            }
+        }
+    }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 321px) {
     .container{
         width: 100%;
     } 
@@ -525,6 +620,34 @@
             height: 30px;
             top: 90px;
             right: 5px;
+        }
+    }
+    .about {
+        height: 425px;
+        padding-top: 80px;
+        padding-bottom: 30px;    
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 300px;
+            margin-left: 10px;
+        }
+        &__block {
+            width: 300px;
+            height: 300px;
+            padding: 10px 20px 10px 20px;
+            &-title {
+                top: -20px;
+                left: 20px;
+                padding-right: 15px;
+                padding-left: 25px;
+            }
+
+            .title {
+                font-size: 27px;
+            }
+            &-descr {
+                font-size: 12px;
+            } 
         }
     }
 }
