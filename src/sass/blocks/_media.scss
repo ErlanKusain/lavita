@@ -1,10 +1,10 @@
-// @media (min-width: 1201px) {
-//     .header {
-//         &__logo {
-//             display: none;
-//         }
-//     }
-// }
+@media (min-width: 1201px) {
+    .home {
+        position: absolute;
+        top: 150px;
+        left: 16%;
+    }
+}
 
 @media(max-width: 1200px) {
     .container {
@@ -373,6 +373,7 @@
         &__img {
             width: 720px;
             margin: 0 auto;
+            margin-top: 50px;
             img {
                 width: 100%;
             }
@@ -388,6 +389,7 @@
         &__img {
             width: 720px;
             margin: 0 auto;
+            margin-top: 50px;
             img {
                 width: 100%;
             }
