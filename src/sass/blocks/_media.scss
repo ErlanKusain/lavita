@@ -193,6 +193,21 @@
             width: 100%;
         }
     }
+
+    .contacts {
+        &__img {
+            width: 960px;
+            img {
+                width: 100%;
+            }
+        }
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 210px 255px 145px;
+            column-gap: 150px;
+            row-gap: 50px;
+        }
+    }
 }
 
 
@@ -369,6 +384,21 @@
     .title {
         font-size: 43px;
     }
+    .contacts {
+        &__img {
+            width: 720px;
+            margin: 0 auto;
+            img {
+                width: 100%;
+            }
+        }
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 210px 255px 145px;
+            column-gap: 50px;
+            row-gap: 50px;
+        }
+    }
 }
 
 
@@ -410,8 +440,7 @@
             background-color: rgba(255, 0, 0, 0.900);
             z-index: 2;
             transition: 0.6s all;
-            &_active{
-                position: absolute;
+            &_active {
                 right: 0;
             }
             &__item {
@@ -433,6 +462,10 @@
                 }
                 &-second {
                     position: relative;
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                    }
                     &::before {
                         content: url(../../img/icons/call-white.svg);
                         position: absolute;
@@ -621,16 +654,16 @@
     .footer {
         &__wrapper {
             display: grid;
-            grid-template-columns: repeat(2,200px);
+            grid-template-columns: repeat(2,230px);
             vertical-align: text-top;
-            column-gap: 56px;
+            column-gap: 80px;
             row-gap: 45px;
         }
     }
 
     .timetable {
         position: relative;
-        padding-top: 70px;
+        padding-top: 110px;
         .title {
             font-size: 38px;
         }
@@ -651,10 +684,14 @@
                 margin: 50px 0px auto;
             }
         }
-
+        .home {
+            position: absolute;
+            top: 70px;
+            left: 35px;
+        }
     }
     .exam {
-        padding-top: 120px;
+        padding-top: 150px;
         &__wrapper {
             width: 100%;
         }
@@ -672,9 +709,35 @@
         &__title {
             width: 100%;
         }
+        .home {
+            position: absolute;
+            top: 70px;
+            left: 35px;
+        }
     }
     .title {
         font-size: 38px;
+    }
+    .contacts {
+        padding-top: 150px;
+        &__img {
+            width: 520px;
+            margin: 0 auto;
+            img {
+                width: 100%;
+            }
+        }
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 210px 255px;
+            column-gap: 50px;
+            row-gap: 50px;
+        }
+        .home {
+            position: absolute;
+            top: 70px;
+            left: 35px;
+        }
     }
 }
 
@@ -876,7 +939,7 @@
     }
     .timetable {
         position: relative;
-        padding: 70px 0 10px 0;
+        padding: 90px 0 10px 0;
         &__subtitle {
             margin-top: 35px;
             margin-bottom: 30px;
@@ -910,7 +973,7 @@
         }
     }
     .exam {
-        padding-top: 140px;
+        padding-top: 150px;
         &__title {
             font-size: 28px;
             width: 100%;
@@ -934,6 +997,31 @@
             img {
                 width: 100%;
             }
+        }
+        .home {
+            position: absolute;
+            top: 70px;
+            left: 35px;
+        }
+    }
+    .contacts {
+        padding-top: 150px;
+        &__img {
+            width: 360px;
+            height: 250px;
+            margin: 0 auto;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 210px;
+            row-gap: 50px;
+            justify-content: center;
+            margin-top: 30px;
         }
         .home {
             position: absolute;
@@ -1083,6 +1171,31 @@
             img {
                 width: 100%;
             }
+        }
+    }
+    .contacts {
+        padding-top: 150px;
+        &__img {
+            width: 310px;
+            height: 200px;
+            margin: 0 auto;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 210px;
+            row-gap: 50px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .home {
+            position: absolute;
+            top: 70px;
+            left: 35px;
         }
     }
 }
